@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active:
+      - secret
+  ai:
+    openai:
+      # deepSeek地址；换成 kimi/通义千问就改这个base-url
+      base-url: https://api.moonshot.cn/v1
+      chat:
+        model: kimi-k3
